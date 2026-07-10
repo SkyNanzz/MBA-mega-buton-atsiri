@@ -1027,6 +1027,44 @@ img {
   margin-right: auto;
 }
 
+/* ===== FLOATING WHATSAPP BUTTON ===== */
+.whatsapp-float {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 56px;
+  height: 56px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  box-shadow: 0 10px 30px rgba(37, 211, 102, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  border: 2px solid rgba(255, 255, 255, 0.18);
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-4px);
+  background: #1fb65a;
+  box-shadow: 0 16px 45px rgba(37, 211, 102, 0.45);
+}
+
+.whatsapp-icon {
+  display: inline-flex;
+}
+
+/* Prevent clash with mobile UI */
+@media (max-width: 768px) {
+  .whatsapp-float {
+    right: 16px;
+    bottom: 16px;
+    width: 52px;
+    height: 52px;
+  }
+}
+
 /* ===== FOOTER ===== */
 .footer {
   background: var(--color-dark2);
