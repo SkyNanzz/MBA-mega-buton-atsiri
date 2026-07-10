@@ -1055,6 +1055,11 @@ img {
   display: inline-flex;
 }
 
+.whatsapp-icon-img {
+  display: block;
+}
+
+
 /* Prevent clash with mobile UI */
 @media (max-width: 768px) {
   .whatsapp-float {
